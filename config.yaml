@@ -1,0 +1,75 @@
+title: Archetype
+baseURL: /
+params:
+  landing_template: home
+  palette: blue
+  palettes:
+    blue:
+      sass:
+        gradient1: '#27a1e3'
+        gradient2: '#e7232a'
+        accent1: '#5f9dd2'
+        accent2: '#758ce1'
+        accent3: '#e286a9'
+    green:
+      sass:
+        gradient1: '#16f4cf'
+        gradient2: '#6532e5'
+        accent1: '#54d3cf'
+        accent2: '#4f92d1'
+        accent3: '#8075e5'
+menu:
+  main:
+    - identifier: layouts
+      name: Page Layouts
+      url: '#'
+      weight: 2
+    - identifier: normal1
+      name: Left Sidebar
+      url: /left-sidebar
+      weight: 1
+      parent: layouts
+    - identifier: normal2
+      name: Right Sidebar
+      url: /right-sidebar
+      weight: 2
+      parent: layouts
+    - identifier: normal3
+      name: No Sidebar
+      url: /no-sidebar
+      weight: 3
+      parent: layouts
+    - identifier: submenu
+      name: Submenu
+      url: '#'
+      weight: 4
+      parent: layouts
+    - identifier: normal4
+      name: Option One
+      url: '#'
+      weight: 1
+      parent: submenu
+    - identifier: normal5
+      name: Option Two
+      url: '#'
+      weight: 2
+      parent: submenu
+    - identifier: normal6
+      name: Option Three
+      url: '#'
+      weight: 3
+      parent: submenu
+    - identifier: normal7
+      name: Option Four
+      url: '#'
+      weight: 4
+      parent: submenu
+  footer:
+    - identifier: normal8
+      name: Made with Stackbit
+      url: 'https://www.stackbit.com'
+      weight: 4
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
